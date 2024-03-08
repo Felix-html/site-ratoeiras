@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(imagem/concreto-texturizado-branco.jpg);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.cabecalho .logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.cabecalho .logo .logo-rato {
+    max-width: 10%;
+}
+
+.cabecalho .logo .logo-letreiro {
+    max-width: 25%;
+}
+
+.cabecalho .logo img {
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cabecalho .logo .logo-rato:hover {
+    transform: scale(1.2);
+}
+
+.cabecalho .logo a {
+    font-size: 45px;
+    padding: 5px;
+    position: absolute;
+    right: 48vh;
+    top: 20px;
+    color: white;
+}
+
+.cabecalho .logo a:hover {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.cabecalho nav {
+    border: solid;
+}
+
+.cabecalho ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cabecalho ul a {
+    padding: 5px;
+    font-family: 'Kode Mono';
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.cabecalho ul a:hover {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    opacity: 0.7;
+    height: 325px;
+}
+
+.banner .logo,
+nav {
+    position: relative;
+    z-index: 1;
+}
+
+main .titulo-evento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .titulo {
+    font-size: 60px;
+    font-family: 'Kode Mono';
+}
+
+main .encontro-evento {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+main .encontro-evento .box {
+    background-color: rgb(122, 28, 30);
+    border: solid 1px #000;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .encontro-evento .box a {
+    margin: 30px 0px 0px 0px;
+    padding: 5px;
+    border: solid 2px;
+    border-radius: 10px;
+    font-family: 'Kode Mono';
+    color: rgb(255, 255, 0);
+}
+
+main .encontro-evento .box a:hover {
+    color: rgb(255, 219, 88);
+}
+
+main .encontro-evento img {
+    max-width: 50%;
+}
+
+@media screen and (max-width: 1510px) {
+    .cabecalho nav {
+        margin: 50px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .cabecalho nav {
+        margin: 65px 0 0 0;
+    }
+
+    .cabecalho .logo-rato,
+    .logo-letreiro {
+        margin: 50px 0 0 0;
+    }
+
+    .cabecalho .logo a {
+        font-size: 40px;
+        right: 30vh;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .cabecalho nav {
+        margin: 108px 0 0 0;
+    }
+
+    .cabecalho .logo a {
+        right: 10vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cabecalho nav {
+        margin: 142px 0 0 0;
+    }
+
+    .cabecalho .logo a {
+        right: 20px;
+    }
+
+    main .encontro-evento {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .cabecalho nav {
+        margin: 146px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cabecalho nav {
+        margin: 148px 0 0 0;
+    }
+}
